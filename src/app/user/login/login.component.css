@@ -127,3 +127,6 @@ label[for="terms"] > input {
   border-radius: 10px;
   padding: 5px;
 }
+section#login-page {
+  margin-top: 80px;
+}
