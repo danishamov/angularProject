@@ -120,3 +120,9 @@ label[for="terms"] > input {
 section#login-page {
   margin-top: 80px;
 }
+#login-page {
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
