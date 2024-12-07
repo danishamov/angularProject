@@ -44,13 +44,11 @@
     margin: 0 0 1rem 0;
   }
   #meet-us-1020 .cs-title {
-    font-size: xx-large;
     font-weight: 900;
     line-height: 1.2em;
     text-align: inherit;
     max-width: 43.75rem;
     margin: 2rem 1rem 0;
-    color: var(--headerColor);
     position: relative;
   }
   #meet-us-1020 .cs-text {
@@ -87,6 +85,7 @@
   #meet-us-1020 .cs-item:hover .cs-picture img {
     transform: scale(1.1);
     opacity: 0.6;
+    cursor: pointer;
   }
   #meet-us-1020 .cs-info {
     width: 85.5%;
@@ -153,4 +152,19 @@
   #meet-us-1020 .cs-item {
     grid-column: span 4;
   }
+}
+.no-articles {
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  font-size: 60px;
+  font-family: "Agency FB";
+}
+
+.cs-container h1 {
+  color: rgb(252, 168, 151);
+  text-align: center;
+  font-weight: 700;
+  font-size: 84px;
+  font-family: "Agency FB";
 }

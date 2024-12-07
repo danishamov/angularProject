@@ -4,45 +4,30 @@
 
 <section id="meet-us-1020">
   <div class="cs-container">
-    <div class="cs-content">
-      <img
-        class="cs-graphic"
-        aria-hidden="true"
-        loading="lazy"
-        decoding="async"
-        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Ornament.svg"
-        alt="chef"
-        width="456"
-        height="31"
-      />
-      <h2 class="cs-title">Latest Game</h2>
-    </div>
+    <h1 class="cs-title">Latest Game</h1>
     <ul class="cs-card-group">
       <li class="cs-item">
-        <picture class="cs-picture">
-          <source
-            media="(max-width: 767px)"
-            srcset="
-              https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/chef1.jpg
-            "
-          />
-          <source media="(min-width: 768px)" srcset="/CoverFire.png" />
-          <img
-            aria-hidden="true"
-            loading="lazy"
-            decoding="async"
-            src="/CoverFire.png"
-            alt="chef"
-            width="305"
-            height="335"
-          />
-        </picture>
-        <div class="cs-info">
-          <span class="cs-name">Zaki Deanra</span>
-          <span class="cs-job">Head Chef</span>
-        </div>
+        <a routerLink="/details">
+          <picture class="cs-picture">
+            <source media="(max-width: 767px)" srcset="/CoverFire.png" />
+            <source media="(min-width: 768px)" srcset="/CoverFire.png" />
+            <img
+              aria-hidden="true"
+              loading="lazy"
+              decoding="async"
+              src="/CoverFire.png"
+              alt="chef"
+              width="305"
+              height="335"
+            />
+          </picture>
+          <div class="cs-info">
+            <h6 class="cs-name">Action</h6>
+            <h2 class="cs-name">Cover Fire</h2>
+          </div>
+        </a>
       </li>
-      <li class="cs-item">
+      <!-- <li class="cs-item">
         <picture class="cs-picture">
           <source
             media="(max-width: 767px)"
@@ -99,7 +84,8 @@
           <span class="cs-name">Zaki Deanra</span>
           <span class="cs-job">Head Chef</span>
         </div>
-      </li>
+      </li> -->
     </ul>
+    <p class="no-articles">No games yet</p>
   </div>
 </section>

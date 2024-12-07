@@ -130,3 +130,9 @@ label[for="terms"] > input {
 section#edit-page {
   margin-top: 80px;
 }
+#edit-page {
+  display: block;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}

@@ -145,7 +145,7 @@
     line-height: 1.5em;
     text-decoration: none;
     margin: 0;
-    color: var(--bodyTextColorWhite);
+    color: #f6e5db;
     position: relative;
   }
   #cs-footer-710 .cs-nav-link:hover:before {
@@ -220,7 +220,7 @@
     text-align: center;
     width: 70%;
     margin: 0;
-    color: var(--bodyTextColorWhite);
+    color: #f6e5db;
     display: block;
   }
   #cs-footer-710 .cs-copyright-link {
@@ -228,7 +228,7 @@
     line-height: inherit;
     text-decoration: none;
     margin: 0;
-    color: inherit;
+    color: #f6e5db;
     display: inline-block;
   }
   #cs-footer-710 .cs-copyright-link:hover {
