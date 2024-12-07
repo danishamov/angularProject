@@ -6,6 +6,8 @@ import { CreateComponent } from './user/create/create.component';
 import { DetailsComponent } from './details/details.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { EditComponent } from './edit/edit.component';
+import { CollectionComponent } from './collection/collection.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 export const routes: Routes = [
   //   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,4 +22,6 @@ export const routes: Routes = [
 
   { path: 'catalog', component: CatalogComponent },
   { path: 'edit', component: EditComponent },
+  { path: 'collection', component: CollectionComponent },
+  { path: 'contact', component: ContactUsComponent },
 ];
