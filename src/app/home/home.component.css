@@ -1,174 +1,156 @@
-#welcome-world {
-  width: auto;
-  padding-right: 15px;
-  padding-top: 7em;
-  justify-content: right;
-  padding-left: 15px;
-  position: relative;
-  box-sizing: border-box;
-  text-align: center;
-}
+/*-- -------------------------- -->
+<---       Meet The Team        -->
+<--- -------------------------- -*/
 
-#welcome-world .welcome-message {
-  display: inline-block;
-  z-index: 999;
-  margin: 0 auto;
-  left: 0;
-  top: 40%;
-  text-align: center;
-  width: 30%;
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #meet-us-1020 {
+    padding: var(--sectionPadding);
+  }
+  #meet-us-1020 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #meet-us-1020 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #meet-us-1020 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #meet-us-1020 .cs-graphic {
+    width: 100%;
+    max-width: 26.82352941rem;
+    margin: 0 0 1rem 0;
+  }
+  #meet-us-1020 .cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
+  #meet-us-1020 .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #meet-us-1020 .cs-card-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #meet-us-1020 .cs-item {
+    list-style: none;
+    width: 100%;
+    max-width: 25.8125rem;
+    position: relative;
+    z-index: 1;
+  }
+  #meet-us-1020 .cs-item:hover .cs-picture {
+    background-color: #000;
+  }
+  #meet-us-1020 .cs-item:hover .cs-picture img {
+    transform: scale(1.1);
+    opacity: 0.6;
+  }
+  #meet-us-1020 .cs-info {
+    width: 85.5%;
+    /* 16px - 24px */
+    padding: clamp(1rem, 2vw, 1.5rem);
+    margin: -3.75rem auto 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    border-top: 4px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+  }
+  #meet-us-1020 .cs-name {
+    /* 16px - 25px */
+    font-size: clamp(1rem, 2vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    /* 4px - 8px */
+    margin: 0 0 clamp(0.25rem, 1vw, 0.5rem);
+    color: var(--headerColor);
+    display: block;
+    transition: color 0.3s;
+  }
+  #meet-us-1020 .cs-job {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #meet-us-1020 .cs-picture {
+    width: 100%;
+    /* 246px - 500px */
+    height: clamp(15.375rem, 40vw, 32.25rem);
+    overflow: hidden;
+    display: block;
+    position: relative;
+    transition: background-color 0.3s;
+    z-index: -1;
+  }
+  #meet-us-1020 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes it behave like a background imahe */
+    object-fit: cover;
+    /* makes the image position itself at the top of the parent */
+    object-position: top;
+    transition: transform 0.6s, opacity 0.3s;
+  }
 }
-
-#welcome-world > img {
-  height: auto;
-  display: inline-block;
-  vertical-align: middle;
-  max-width: 60%;
-  margin-left: auto;
-  padding-left: auto;
-}
-
-.welcome-message h2 {
-  color: #ffffff;
-  font-size: 300%;
-  font-size: 55px;
-  line-height: 1;
-  font-weight: 700;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: uppercase;
-  text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
-  font-family: "Agency FB";
-}
-
-.welcome-message h3 {
-  color: #ffffff;
-  font-size: 600%;
-  text-shadow: none;
-  line-height: 1;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: normal;
-  word-spacing: normal;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
-  font-family: "Agency FB";
-}
-
-#welcome-world > #home-page {
-  width: 50% fit-content;
-  margin: auto;
-  text-align: center;
-}
-
-#home-page {
-  background-color: transparent;
-  box-shadow: 0px 0px 40px 0px;
-  overflow: hidden;
-  border-radius: 10px;
-  padding: 55px;
-  height: auto;
-  width: auto;
-}
-
-.game {
-  box-shadow: 0px 0px 30px 0px;
-  margin-top: 20px;
-  padding: 50px;
-  margin-left: 50px;
-  background-position: right 35% bottom 45%;
-  box-sizing: border-box;
-  border-radius: 15px;
-  float: left;
-  height: auto;
-  color: rgb(204, 144, 131);
-}
-
-.image-wrap {
-  width: 250px;
-  height: 250px;
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-}
-
-.image-wrap > img {
-  max-width: 100%;
-}
-
-.game > h3 {
-  font-family: "Agency FB";
-  font-size: 42px;
-  font-weight: 700;
-  line-height: normal;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  transition: all 0.5s ease-out;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.game-content > h4 {
-  color: #c2d4f8;
-  font-size: 24px;
-  text-align: center;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.rating {
-  unicode-bidi: bidi-override;
-  text-align: center;
-  direction: rtl;
-}
-
-.rating span {
-  font-size: 40px;
-  padding: 4px;
-}
-
-.rating span:before {
-  content: "\2605";
-  position: absolute;
-  color: gold;
-}
-
-.details-btn {
-  background-color: #fd5454;
-  font-size: 1.4rem;
-  padding-top: 20px;
-  margin-top: 10px;
-  color: white;
-  padding: 0.9em 1.4em;
-}
-
-.data-buttons {
-  font-size: 1.4rem;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.btn.details-btn:hover {
-  background-color: rgb(192, 129, 117);
-  color: white;
-}
-
-#home-page > h1 {
-  color: rgb(252, 168, 151);
-  text-align: center;
-  font-weight: 700;
-  font-size: 84px;
-  font-family: "Agency FB";
-}
-
-.no-articles {
-  color: white;
-  text-align: center;
-  font-weight: 700;
-  font-size: 60px;
-  font-family: "Agency FB";
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #meet-us-1020 .cs-card-group {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+  }
+  #meet-us-1020 .cs-item {
+    grid-column: span 4;
+  }
 }
