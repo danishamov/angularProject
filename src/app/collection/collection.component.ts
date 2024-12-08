@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-collection',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './collection.component.html',
-  styleUrl: './collection.component.css'
+  styleUrl: './collection.component.css',
 })
-export class CollectionComponent {
-
-}
+export class CollectionComponent {}

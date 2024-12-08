@@ -220,8 +220,10 @@
     white-space: nowrap;
     width: 100%;
     margin: 0;
-    color: var(--headerColor);
+    color: #fff;
     overflow: hidden;
+    text-align: center;
+    padding: 5px;
   }
   #collection-1602 .cs-actions {
     margin-top: 1.25rem;
@@ -250,7 +252,7 @@
     width: 1.25rem;
     height: 1.25rem;
   }
-  #collection-1602 .cs-buy {
+  #collection-1602 .cs-like {
     max-height: 2.5rem;
     padding: 0.5rem;
     background: none;
@@ -260,9 +262,15 @@
     justify-content: center;
     align-items: center;
   }
+  #collection-1602 .cs-like :hover {
+    cursor: pointer;
+  }
   #collection-1602 .cs-basket {
-    width: 1.5rem;
+    width: 2.5rem;
     height: auto;
+  }
+  .cs-basket :hover {
+    cursor: pointer;
   }
 }
 /* Tablet - 768px */

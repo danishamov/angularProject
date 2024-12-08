@@ -91,15 +91,15 @@
     width: 85.5%;
     /* 16px - 24px */
     padding: clamp(1rem, 2vw, 1.5rem);
-    margin: -3.75rem auto 0;
+    margin: -7.25rem auto 0;
     box-sizing: border-box;
-    background-color: #f7f7f7;
+    background-color: #6c7058;
     border-top: 4px solid var(--primary);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 10;
+    border-radius: 70px;
   }
   #meet-us-1020 .cs-name {
     /* 16px - 25px */
