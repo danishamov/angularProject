@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class ApiService {
-  bastUrl = 'http://localhost:3030';
+  // bastUrl = 'http://localhost:3030';
 
   constructor(private http: HttpClient) {}
 
@@ -23,6 +23,6 @@ export class ApiService {
       imageUrl,
       summary,
     };
-    return this.http.post(`${this.bastUrl}/games`, payload);
+    return this.http.post(`/api/games`, payload);
   }
 }

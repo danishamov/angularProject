@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, tap } from 'rxjs';
-import { UserForAuth } from '../types/user';
+import { User, UserForAuth } from '../../types/user';
 
 @Injectable({
   providedIn: 'root',
@@ -25,6 +25,7 @@ export class UserService {
 
   login(email: string, password: string) {
     // return this.http.post('/api/login', { email, password });
+
     return (
       this.http
         // .post<UserForAuth>('/api/login', { email, password })
