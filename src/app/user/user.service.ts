@@ -52,4 +52,10 @@ export class UserService {
       .post(`${this.baseUrl}/logout`, {})
       .pipe(tap((user) => this.user$$.next(null)));
   }
+
+  getProfile() {
+    return this.http
+      .get<UserForAuth>('/api/users/profile')
+      .pipe(tap((user) => this.user$$.next(user)));
+  }
 }
