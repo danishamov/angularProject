@@ -1,5 +1,5 @@
 <section id="login-page" class="auth">
-  <form id="login">
+  <form #form="ngForm" (ngSubmit)="login(form)" id="login">
     <div class="container">
       <div class="brand-logo"></div>
       <h1>Login</h1>
@@ -9,10 +9,21 @@
         id="email"
         name="email"
         placeholder="Sokka@gmail.com"
+        ngModel
+        #inputEmail="ngModel"
+        required
       />
 
-      <label for="login-pass">Password:</label>
-      <input type="password" id="login-password" name="password" />
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        ngModel
+        #inputPassword="ngModel"
+        required
+      />
+      <!-- <button>Login</button> -->
       <input type="submit" class="btn submit" value="Login" />
       <p class="field">
         <span

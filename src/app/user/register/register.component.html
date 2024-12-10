@@ -10,14 +10,24 @@
         id="email"
         name="email"
         placeholder="maria@email.com"
+        ngModel
+        #inputEmail="ngModel"
+        required
       />
 
       <label for="pass">Password:</label>
-      <input type="password" name="password" id="register-password" />
+      <input
+        type="password"
+        name="password"
+        id="register-password"
+        ngModel
+        #inputPassword="ngModel"
+        required
+      />
 
       <label for="con-pass">Confirm Password:</label>
-      <input type="password" name="confirm-password" id="confirm-password" />
-
+      <input type="password" name="rePassword" id="rePassword" />
+      <!-- <button>Register</button> -->
       <input class="btn submit" type="submit" value="Register" />
 
       <p class="field">
