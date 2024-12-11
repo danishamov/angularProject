@@ -11,13 +11,13 @@ import { ApiService } from '../api.service';
 })
 export class CollectionComponent implements OnInit {
   games: Game[] = [];
-  isLoading = true;
+  // isLoading = true;
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {
     this.apiService.getGame().subscribe((games) => {
       this.games = games;
-      this.isLoading = false;
+      // this.isLoading = false;
     });
   }
 }

@@ -10,11 +10,9 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
-  getGame(limit?: number) {
-    let url = `${this.bastUrl}/`;
-    if (limit) {
-      url += `?limit=${limit}`;
-    }
+  getGame() {
+    let url = `${this.bastUrl}/games`;
+
     return this.http.get<Game[]>(url);
   }
 
@@ -32,15 +30,6 @@ export class ApiService {
       imageUrl,
       summary,
     };
-    return this.http.post(
-      `${this.bastUrl}/games`,
-      payload
-      //   {
-      //   headers: {
-      //     'content-type': 'application/json',
-      //   },
-      //   body: JSON.stringify(payload),
-      // }
-    );
+    return this.http.post(`${this.bastUrl}/games`, payload);
   }
 }

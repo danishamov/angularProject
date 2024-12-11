@@ -5,25 +5,27 @@
 <section id="meet-us-1020">
   <div class="cs-container">
     <h1 class="cs-title">Latest Game</h1>
+    @if (games) { @for (game of games; track $index) {
+
     <ul class="cs-card-group">
       <li class="cs-item">
         <a routerLink="/details">
           <picture class="cs-picture">
-            <source media="(max-width: 767px)" srcset="/CoverFire.png" />
-            <source media="(min-width: 768px)" srcset="/CoverFire.png" />
+            <source media="(max-width: 767px)" srcset="{{game.imageUrl}}" />
+            <source media="(min-width: 768px)" srcset="{{game.imageUrl}}" />
             <img
               aria-hidden="true"
               loading="lazy"
               decoding="async"
-              src="/CoverFire.png"
+              src="{{ game.imageUrl }}"
               alt="chef"
               width="305"
               height="335"
             />
           </picture>
           <div class="cs-info">
-            <h6 class="cs-name">Action</h6>
-            <h2 class="cs-name">Cover Fire</h2>
+            <h6 class="cs-name">{{ game.category }}</h6>
+            <h2 class="cs-name">{{ game.title }}</h2>
           </div>
         </a>
       </li>
@@ -86,6 +88,9 @@
         </div>
       </li> -->
     </ul>
+    } }@else {
+
     <p class="no-articles">No games yet</p>
+    }
   </div>
 </section>

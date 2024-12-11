@@ -19,16 +19,18 @@
     <div class="cs-listing-wrapper">
       <!--Listing 1-->
       <div class="cs-listing" data-category="one">
+        @for (game of games; track $index) {
+
         <div class="cs-item">
           <a routerLink="/details" class="cs-link">
             <div class="cs-picture-group">
               <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="/avatar-1.jpg" />
-                <source media="(min-width: 601px)" srcset="/avatar-1.jpg" />
+                <source media="(max-width: 600px)" srcset="{{game.imageUrl}}" />
+                <source media="(min-width: 601px)" srcset="{{game.imageUrl}}" />
                 <img
                   loading="lazy"
                   decoding="async"
-                  src="/avatar-1.jpg"
+                  src="{{ game.imageUrl }}"
                   alt="gallery"
                   width="305"
                   height="400"
@@ -36,8 +38,8 @@
               </picture>
             </div>
             <div class="cs-details">
-              <h3 class="cs-name">Action</h3>
-              <h2 class="cs-name">MineCraft</h2>
+              <h3 class="cs-name">{{ game.category }}</h3>
+              <h2 class="cs-name">{{ game.title }}</h2>
             </div>
           </a>
           <div class="cs-actions">
@@ -98,6 +100,8 @@
             </a>
           </div>
         </div>
+        }
+
         <!-- <div class="cs-item">
           <a href="" class="cs-link">
             <div class="cs-picture-group">

@@ -2,14 +2,14 @@ import { Post } from './posts';
 import { User } from './user';
 
 export interface Game {
-  likes: string[];
-  comments: Post[];
+  // likes: string[];
+  // comments: Post[];
   title: string;
   category: string;
-  maxLevel: number;
+  maxLevel: string;
   imageUrl: string;
   summary: string;
   _id: string;
-  userId: User;
-  __v: number;
+  // userId: User;
+  // __v: number;
 }
