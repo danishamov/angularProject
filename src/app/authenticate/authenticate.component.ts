@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { UserService } from '../user/user.service';
+import { LoadiingComponent } from '../loadiing/loadiing.component';
 
 @Component({
   selector: 'app-authenticate',
-  imports: [],
+  imports: [LoadiingComponent],
   templateUrl: './authenticate.component.html',
   styleUrl: './authenticate.component.css',
 })

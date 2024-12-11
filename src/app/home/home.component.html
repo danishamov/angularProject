@@ -3,6 +3,10 @@
 <!-- ============================================ -->
 
 <section id="meet-us-1020">
+  @if (isLoading) {
+  <app-loadiing />
+  }@else {
+
   <div class="cs-container">
     <h1 class="cs-title">Latest Game</h1>
     @if (games) { @for (game of games; track $index) {
@@ -93,4 +97,5 @@
     <p class="no-articles">No games yet</p>
     }
   </div>
+  }
 </section>
