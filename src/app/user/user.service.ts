@@ -7,7 +7,7 @@ import { User, UserForAuth } from '../../types/user';
   providedIn: 'root',
 })
 export class UserService {
-  baseUrl = 'http://localhost:3000/auth';
+  baseUrl = 'http://localhost:3030/users';
   private user$$ = new BehaviorSubject<UserForAuth | null>(null);
   public user$ = this.user$$.asObservable();
 
@@ -28,15 +28,15 @@ export class UserService {
 
     return (
       this.http
-        // .post<UserForAuth>('/api/login', { email, password })
+        // .post<UserForAuth>('/api/users/login', { email, password })
         .post<UserForAuth>(`${this.baseUrl}/login`, { email, password })
         .pipe(tap((user) => this.user$$.next(user)))
     );
   }
 
-  crete(title: string, category: string, imageUrl: string, summary: string) {
-    return this.http.post;
-  }
+  // crete(title: string, category: string, imageUrl: string, summary: string) {
+  //   return this.http.post;
+  // }
 
   register(email: string, password: string) {
     return this.http

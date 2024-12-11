@@ -36,10 +36,10 @@ export class RegisterComponent {
     // }
     const { email, password, rePassword } = form.value;
 
-    console.log(form);
+    console.log(form.value);
 
-    // this.userService.register(email, password, rePassword).subscribe(() => {
-    //   this.router.navigate(['/collection']);
-    // });
+    this.userService.register(email, password).subscribe(() => {
+      this.router.navigate(['/collection']);
+    });
   }
 }
