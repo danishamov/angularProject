@@ -10,5 +10,5 @@ export interface Post {
   gameId: Game;
   created_at: string;
   updatedAt: string;
-  __v: number;
+  // __v: number;
 }

@@ -4,7 +4,7 @@ import { LoadiingComponent } from '../loadiing/loadiing.component';
 
 @Component({
   selector: 'app-authenticate',
-  imports: [LoadiingComponent],
+  imports: [],
   templateUrl: './authenticate.component.html',
   styleUrl: './authenticate.component.css',
 })
