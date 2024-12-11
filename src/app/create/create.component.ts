@@ -5,7 +5,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-create',
-  imports: [RouterLink, FormsModule],
+  imports: [FormsModule],
   templateUrl: './create.component.html',
   styleUrl: './create.component.css',
 })
