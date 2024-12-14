@@ -24,8 +24,8 @@ export class LoginComponent {
 
     // console.log(result);
 
-    // result.subscribe(() => {
-    //   this.router.navigate(['/']);
-    // });
+    result.subscribe(() => {
+      this.router.navigate(['/']);
+    });
   }
 }
