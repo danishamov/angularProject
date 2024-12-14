@@ -51,7 +51,7 @@
 
     <div class="cs-contact-group">
       @if (isLoggedIn) {
-      <a routerLink="/logout" class="cs-phone">Logout </a>
+      <a (click)="logOut()" routerLink="/logOut" class="cs-phone">Logout </a>
       } @else {
       <a routerLink="login" class="cs-phone">Login </a>
       <a routerLink="/register" class="cs-phone">Register </a>

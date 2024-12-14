@@ -17,6 +17,6 @@ export class HeaderComponent {
 
   logOut() {
     this.userService.logout();
-    this.router.navigate(['/']);
+    this.router.navigate(['/collection']);
   }
 }

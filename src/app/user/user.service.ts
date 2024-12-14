@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, tap } from 'rxjs';
-import { User, UserForAuth } from '../../types/user';
+import { UserForAuth } from '../../types/user';
 
 @Injectable({
   providedIn: 'root',
@@ -24,14 +24,22 @@ export class UserService {
   }
 
   login(email: string, password: string) {
-    // return this.http.post('/api/login', { email, password });
+    console.log(this.user);
 
-    return (
-      this.http
-        // .post<UserForAuth>('/api/users/login', { email, password })
-        .post<UserForAuth>(`${this.baseUrl}/login`, { email, password })
-        .pipe(tap((user) => this.user$$.next(user)))
-    );
+    // this.user = {
+    //   email: 'dani@abv',
+    //   password: 'password',
+    //   _id: 'asdasdasd',
+    //   accessToken: '123456',
+    // };
+    // localStorage.setItem(this.USER_KEY, JSON.stringify(this.user));
+    console.log(this.user);
+
+    const result = this.http
+      .post<UserForAuth>(`${this.baseUrl}/login`, { email, password })
+      .pipe(tap((user) => this.user$$.next(user)));
+
+    return result;
   }
 
   // crete(title: string, category: string, imageUrl: string, summary: string) {
@@ -49,13 +57,13 @@ export class UserService {
 
   logout() {
     return this.http
-      .post(`${this.baseUrl}/logout`, {})
+      .get(`${this.baseUrl}/logout`, {})
       .pipe(tap((user) => this.user$$.next(null)));
   }
 
   getProfile() {
     return this.http
-      .get<UserForAuth>('/api/users/profile')
+      .get<UserForAuth>(`${this.baseUrl}/profile`)
       .pipe(tap((user) => this.user$$.next(user)));
   }
 }

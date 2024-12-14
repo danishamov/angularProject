@@ -20,10 +20,12 @@ export class LoginComponent {
 
     const { email, password } = form.value;
 
-    console.log(form.value);
+    const result = this.userService.login(email, password);
 
-    this.userService.login(email, password).subscribe(() => {
-      this.router.navigate(['/']);
-    });
+    // console.log(result);
+
+    // result.subscribe(() => {
+    //   this.router.navigate(['/']);
+    // });
   }
 }
